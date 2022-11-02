@@ -11,6 +11,8 @@ int main(){
     for(i=0; i < num_entradas; i++){
         std::cin.ignore();
         std::getline(std::cin, senha);
+
+        std::cout<<senha<<std::endl;
         intruso.set_senha_vazada(senha);
     }
     std::cout << intruso.crack_senha() <<std::endl;
