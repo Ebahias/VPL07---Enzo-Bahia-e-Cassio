@@ -7,9 +7,9 @@ int main(){
     Intruso intruso;
     
     std::cin >> num_entradas;
+    std::cin.ignore();
 
     for(i=0; i < num_entradas; i++){
-        std::cin.ignore();
         std::getline(std::cin, senha);
         intruso.set_senha_vazada(senha);
     }
