@@ -6,13 +6,11 @@
 class Intruso{
     /*Continue a implementação da classe Intruso*/
     private:
-        std::vector<std::map<char, std::vector<int>>> _code;
-        std::vector<std::string> _senhas;
-        
+        std::vector<std::map<char, std::vector<int>>> maps;
+        std::vector<std::string> senhas;
+        std::string letras = "ABCDE";
 
     public:
-        Intruso();
-        ~Intruso();
         void set_senha_vazada(std::string vazou);
         std::string crack_senha();
 };

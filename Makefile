@@ -1,6 +1,5 @@
 all:
-    g++ *.cpp -o main.out
-    
-clean:
+	g++ *.cpp -o main.out
 
-    rm main.out
+clean:
+	rm main.out
